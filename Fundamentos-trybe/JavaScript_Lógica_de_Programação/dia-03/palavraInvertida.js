@@ -1,4 +1,4 @@
-let word = "tryber";
+let word = "Tryber";
 let novaPalavra = "";
     novaPalavra = word.split("").reverse().join("");
-        console.log(novaPalavra)
+        console.log(novaPalavra.toLowerCase())
