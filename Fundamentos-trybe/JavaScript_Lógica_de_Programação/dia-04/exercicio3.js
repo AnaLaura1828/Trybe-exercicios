@@ -6,4 +6,4 @@ function retornaTrueOrFalse(string) {
         return false ;
     }
 }
-console.log(retornaTrueOrFalse('boi'));
+console.log(retornaTrueOrFalse('arara'));
