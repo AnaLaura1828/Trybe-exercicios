@@ -14,6 +14,5 @@ function imparesPares(valores) {
     }
     return resultado
 }
-console.log(pares, impares);
     
 
