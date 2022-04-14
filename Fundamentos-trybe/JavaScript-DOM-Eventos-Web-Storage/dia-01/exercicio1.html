@@ -49,10 +49,10 @@
         - document.getElementsByTagName()*/
 
 // Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício) //
-    function descrition() {
+    function descricao() {
      let minhaDescricao = document.getElementsByTagName("p")[0].innerHTML = "Daqui dois anos pretento estar formada da Trybe e estar trabalhando na area e viajando muito" //.toUpperCase()
     }
-    descrition("p")
+    descricao("p")
     
  //Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
 
@@ -73,30 +73,23 @@
     function correçãoTexto() {
      let correcao= document.getElementsByClassName("title")[0].innerHTML = "Exercício 5.1 - JavaScript"   
     }
-    correçãoTexto()
-
  //Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
     function textoMaiusculo() {
         
-     let valor = document.getElementsByTagName("p")[0]
-     valor.innerText = getElementsByTagName("p").toUpperCase()
-      // for(let index = 0; index < document.getElementsByTagName("p").//length; index +=1) {
-          // valor.push(toUpperCase)
-        //   return valor
-       
-       
-      //  let = document.getElementsByTagName("section")[0].innerHTML = toUpperCase()
-       // let = document.getElementsByTagName("p")[0] = toUpperCase()
-   // let = document.getElementsByClassName("center-content")[0].innerHTML
+     let valor = document.getElementsByTagName("p")
+     for(let index in valor) {
+     valor[index].innerText = valor[index].innerText.toUpperCase()
+     }
     }
     textoMaiusculo()
+
  //Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     function todasTAG() {
-        let retorno = 0;
-    for(let index = 0; index < getElementsByTagName("p"); index +=1)
-    retorno +1;
-       console.log(document.getElementsByClassName("p"))
+        let retorno = document.getElementsByTagName("p")
+    for(let index = 0; index < retorno.length; index +=1) {
+       console.log(retorno[index].innerText)
     }
+  }
     todasTAG()
         
     </script>
