@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+     let elementH1 = document.createElement("h1");
+     elementH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+     document.body.appendChild(elementH1);
+
+     let adicionaMain =  document.createElement("main");
+     adicionaMain.className = "main-center"
+     document.body.appendChild(adicionaMain);
+
+     let sessao = document.createElement("section");
+     sessao.className = "center-content"
+     adicionaMain.appendChild(sessao); // criar uma function p add todas as sessoes??
+
+    let introducao = document.createElement("p")
+    introducao.innerText = " Sem bem vindos a minha pagina Web!!"
+    sessao.appendChild(introducao);
+
+    let novaSessao = document.createElement("section")
+    novaSessao.className = "left-content"
+    adicionaMain.appendChild(novaSessao);
+
+    let outraSessao = document.createElement ("section");
+    outraSessao.className = "rigth-content"
+    adicionaMain.appendChild(outraSessao);
+
+    let imagem = document.createElement("img");
+     imagem.className = 'small-image';
+      imagem.src = 'https://picsum.photos/200';
+     novaSessao.appendChild(imagem);
+
+    for(let i = 1; i <=3; i +=1) {
+    let adicionaTag = document.createElement("h3")
+    adicionaTag.innerHTML = "OI" + index;
+    adicionaMain.appendChild(adicionaTag)
+    }
+    </script>
+  </body>
+</html>
+
+
+ 

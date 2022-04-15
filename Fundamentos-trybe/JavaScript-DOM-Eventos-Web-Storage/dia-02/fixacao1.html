@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "purple";
+
+      const recover = document.getElementById("page-title");
+      recover.innerText = "As vantagens de ser invisivel"
+
+      const secondParagraph = document.getElementById("second-paragraph");
+      secondParagraph.innerText = "Aprendendo sobre o DOM e suas funções"
+
+      const title = document.getElementById("subtitle");
+      title.innerText ="Meu WebSite!!!"
+
+      const recuperar = document.getElementsByTagName("p")[0].style.color = "blue"
+
+      const mudanca = document.getElementsByTagName("h4")[0].style.color = "yellow"
+    </script>
+  </body>
+</html>
