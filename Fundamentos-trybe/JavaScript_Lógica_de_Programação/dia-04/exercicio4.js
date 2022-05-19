@@ -8,4 +8,4 @@ function maior ( array) {
     }
     return maiorValor;
 }
-console.log(maior([2, 3, 6, 7, 10, 1]));
+console.log(maior([2, 2, 6, 7, 10, 1]));
