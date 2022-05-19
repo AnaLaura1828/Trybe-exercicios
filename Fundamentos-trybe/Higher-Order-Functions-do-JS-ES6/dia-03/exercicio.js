@@ -116,7 +116,10 @@ const  oldBooks = () => books.filter((elemento) => elemento.releaseYear < new Da
 // console.log(oldBooks());
 
 // 7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais. Dica: cada inicial termina com um ponto.
+<<<<<<< HEAD
 //segunda maneira
+=======
+>>>>>>> 88739f7fe5817f683c8c854ddaaa9f5f9d7352ed
 const authorWith3DotsOnName = () => books.find((elemento) => elemento.author.name.split(".").length === 4).name
 
 // const authorWith3DotsOnName = () => books.find((elemento) => elemento.author.name.split(' ')

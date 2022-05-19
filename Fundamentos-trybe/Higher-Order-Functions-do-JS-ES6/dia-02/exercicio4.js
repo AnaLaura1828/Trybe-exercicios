@@ -71,7 +71,6 @@ const books = [
   const expectedResult = false;
 
 function everyoneWasBornOnSecXX() {
-  // escreva seu código aqui
 return books.every( (nascimento) => nascimento.author.birthYear >= 1900 && nascimento.author.birthYear <= 1999)
 }
 console.log(everyoneWasBornOnSecXX());
@@ -87,7 +86,6 @@ console.log(nascido80());
 const expectedResulti = false;
 
 function authorUnique() {
-  // escreva seu código aqui
   let array = []
   for(i of books) {
       array.push(i.author.birthYear)
